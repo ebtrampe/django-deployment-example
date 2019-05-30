@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+	{% block body_block %}
+		<h1>Welcome to INDEX</h1>
+		<h2>This is index.html page showing</h2>
+
+		{# Apply some python method on the text like .upper() #}
+		{# <h1>{{ text|upper }}</h1> #}
+		<h1>{{ text|cut:'world' }}</h1>
+		{# Adding numbers #}
+		<h1>{{ number|add:'99' }}</h1>
+			
+	{% endblock body_block %}
+
+
+

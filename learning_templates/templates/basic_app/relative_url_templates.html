@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RELATIVE URL TEMPLATES</title>
+</head>
+<body>
+	<h1>Welcome to relative URL templates</h1>
+	{# Common error is leaving left or right space in the url string #}
+	<a href="{% url 'basic_app:other' %}">THE OTEHR PAGE</a>
+	{# This is built in #}
+	<a href="{% url 'admin:index' %}">LINK TO ADMIN</a>
+	{# Link to the index #}
+	<a href="{% url 'index' %}">LINK TO INDEX</a>
+
+</body>
+</html>
